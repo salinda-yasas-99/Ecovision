@@ -9,6 +9,9 @@ import HelpIcon from "../assets/helpIcon.png";
 import settingsIcon from "../assets/settingsIcon.png";
 import logoutIcon from "../assets/logOutIcon.png";
 import { useNavigate } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
 
 const Sidebar = ({ activetab }) => {
   const Tabs = [
@@ -76,6 +79,27 @@ const Sidebar = ({ activetab }) => {
             );
           })}
         </ul>
+        <div className="flex flex-row gap-x-3 ml-7 mt-[14px] border-t-2 pt-4">
+          <div className="bg-[#55bed2] rounded-full p-[3px]">
+            <FaFacebook className="w-[20px] h-[20px]" />
+          </div>
+          <div className="bg-[#55bed2] rounded-full p-[3px]">
+            <FaInstagram className="w-[20px] h-[20px]" />
+          </div>
+          <div className="bg-[#55bed2] rounded-full p-[3px]">
+            <FaTwitter className="w-[20px] h-[20px]" />
+          </div>
+        </div>
+        <div className="flex flex-row text-white ml-7 text-[12px] mt-[10px]">
+          Privacy Policy
+        </div>
+        <div className="flex flex-row text-white ml-7 text-[12px] my-[2px]">
+          Terms & Conditions
+        </div>
+        <div className="flex flex-row text-white ml-7 text-[12px]">©2024</div>
+        <div className="flex flex-row text-white ml-7 text-[12px]">
+          IT Technologies, Inc.
+        </div>
       </div>
     </aside>
   );
