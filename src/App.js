@@ -7,6 +7,8 @@ import Devices from "./pages/Devices";
 import Reports from "./pages/Reports";
 import Help from "./pages/Help";
 import Settings from "./pages/Settings";
+import Notifications from "./pages/Notifications";
+import NotificationDetails from "./components/NotificationDetails ";
 
 function App() {
   return (
@@ -63,6 +65,24 @@ function App() {
             <>
               <Sidebar />
               <Settings />
+            </>
+          }
+        />
+        <Route
+          path="/notifications"
+          element={
+            <>
+              <Sidebar />
+              <Notifications />
+            </>
+          }
+        />
+        <Route
+          path="/notification/:id"
+          element={
+            <>
+              <Sidebar />
+              <NotificationDetails />
             </>
           }
         />
